@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="base-definition" template="/views/tiles/layout/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/views/tiles/includes/header.jsp" />
+		<put-attribute name="menu" value="/views/tiles/includes/menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="" />
+	</definition>
+	
+	<!--Home page  -->
+	<definition name="home" extends="base-definition">
+		<put-attribute name="title" value="home"/>
+		<put-attribute name="body" value="/views/home.jsp"></put-attribute>
+	</definition>
+	<!--Batch list page  -->
+	<definition name="batch-list" extends="base-definition">
+		<put-attribute name="title" value="Batch List"/>
+		<put-attribute name="body" value="/views/batch-list.jsp"></put-attribute>
+	</definition>
+	<!--Batch detail page  -->
+	<definition name="batch-detail" extends="base-definition">
+		<put-attribute name="title" value="Batch Detail"/>
+		<put-attribute name="body" value="/views/batch-detail.jsp"></put-attribute>
+	</definition>
+	<!--Course list page  -->
+	<definition name="course-list" extends="base-definition">
+		<put-attribute name="title" value="Course List"/>
+		<put-attribute name="body" value="/views/course-list.jsp"></put-attribute>
+	</definition>
+	<!--Course detail page  -->
+	<definition name="course-detail" extends="base-definition">
+		<put-attribute name="title" value="Course Detail"/>
+		<put-attribute name="body" value="/views/course-detail.jsp"></put-attribute>
+	</definition>
+	<!--Fresher list page  -->
+	<definition name="fresher-list" extends="base-definition">
+		<put-attribute name="title" value="Fresher List"/>
+		<put-attribute name="body" value="/views/fresher-list.jsp"></put-attribute>
+	</definition>
+	<!--Fresher detail page  -->
+	<definition name="fresher-detail" extends="base-definition">
+		<put-attribute name="title" value="Fresher Detail"/>
+		<put-attribute name="body" value="/views/fresher-detail.jsp"></put-attribute>
+	</definition>
+	<!--User list page  -->
+	<definition name="user-list" extends="base-definition">
+		<put-attribute name="title" value="User List"/>
+		<put-attribute name="body" value="/views/user-list.jsp"></put-attribute>
+	</definition>
+	<!--User detail page  -->
+	<definition name="user-detail" extends="base-definition">
+		<put-attribute name="title" value="User Detail"/>
+		<put-attribute name="body" value="/views/user-detail.jsp"></put-attribute>
+	</definition>
+	<!--Batch configuration page  -->
+	<definition name="batch-config" extends="base-definition">
+		<put-attribute name="title" value="Batch Detail"/>
+		<put-attribute name="body" value="/views/batch-config.jsp"></put-attribute>
+	</definition>
+	<!--Batch Fresher page  -->
+	<definition name="batch-fresher" extends="base-definition">
+		<put-attribute name="title" value="Batch Detail"/>
+		<put-attribute name="body" value="/views/batch-fresher.jsp"></put-attribute>
+	</definition>
+	<!--Batch Course page  -->
+	<definition name="batch-course" extends="base-definition">
+		<put-attribute name="title" value="Batch Detail"/>
+		<put-attribute name="body" value="/views/batch-course.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>
